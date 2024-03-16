@@ -15,7 +15,7 @@ function generateUUID() {
   });
 }
 
-// Direct configuration for AWS SDK
+// Direct configuration for AWS SDK [AWS.config.update left out for security]
 
 const App = () => {
   const [productName, setProductName] = useState('');
