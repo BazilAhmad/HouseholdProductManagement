@@ -16,11 +16,6 @@ function generateUUID() {
 }
 
 // Direct configuration for AWS SDK
-AWS.config.update({
-  region: 'us-east-2',
-  // Note: For production, use Amazon Cognito Identity Pools or AWS Amplify to manage AWS credentials securely.
-  credentials: new AWS.Credentials('AKIAZQ3DOWPV7VPJNPOL', 'HdmsvBJZnPSsbVGWFcB3XXyIpNfizUQyXeo4uH5C'),
-});
 
 const App = () => {
   const [productName, setProductName] = useState('');
